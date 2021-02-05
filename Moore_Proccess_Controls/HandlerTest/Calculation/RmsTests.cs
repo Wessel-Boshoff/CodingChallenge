@@ -24,7 +24,7 @@ namespace Moore_Proccess_Controls.Test.InternalTesting.Calculation
             var result = Rms.Calculate(values);
 
             //Assert    
-            Assert.AreEqual(0m, result);
+            Assert.AreEqual(1.53656609248549M, result);
 
         }
     }

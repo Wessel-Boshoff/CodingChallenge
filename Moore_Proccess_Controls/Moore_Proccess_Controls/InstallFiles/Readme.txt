@@ -1,0 +1,2 @@
+﻿Run script
+Run Installer

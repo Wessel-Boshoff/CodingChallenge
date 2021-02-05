@@ -28,7 +28,7 @@ namespace Moore_Proccess_Controls.Test.InternalTesting
                 CalculationType = CalculationType,
                 Tag = Tag,
                 Date = DateTime.Now,
-                Value = 123,
+                Value = new List<decimal>() { 123 },
                 Id = 1
             };
         }
