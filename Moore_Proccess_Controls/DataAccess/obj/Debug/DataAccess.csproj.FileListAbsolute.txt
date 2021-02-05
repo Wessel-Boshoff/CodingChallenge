@@ -1,0 +1,14 @@
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\DataAccess.dll.config
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\DataAccess.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\DataAccess.pdb
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\EntityFramework.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\Models.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\Models.pdb
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\EntityFramework.xml
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\obj\Debug\DataAccess.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\DataAccess\obj\Debug\DataAccess.pdb

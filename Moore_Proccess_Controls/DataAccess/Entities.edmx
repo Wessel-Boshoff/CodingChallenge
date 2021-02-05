@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Moore_Proccess_ControlsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="InsertCalculationResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdTag" Type="int" Mode="In" />
+          <Parameter Name="IdCalculationType" Type="int" Mode="In" />
+          <Parameter Name="Value" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="InsertLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IdLevel" Type="int" Mode="In" />
+          <Parameter Name="Message" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SelectCalculationType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SelectTag" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="Moore_Proccess_ControlsModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Moore_Proccess_ControlsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Moore_Proccess_ControlsEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="InsertLog">
+            <Parameter Name="IdLevel" Mode="In" Type="Int32" />
+            <Parameter Name="Message" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="InsertCalculationResult">
+            <Parameter Name="IdTag" Mode="In" Type="Int32" />
+            <Parameter Name="IdCalculationType" Mode="In" Type="Int32" />
+            <Parameter Name="Value" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="SelectCalculationType" ReturnType="Collection(Moore_Proccess_ControlsModel.SelectCalculationType_Result)" />
+          <FunctionImport Name="SelectTag" ReturnType="Collection(Moore_Proccess_ControlsModel.SelectTag_Result)" />
+        </EntityContainer>
+        <ComplexType Name="SelectCalculationType_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="170" />
+        </ComplexType>
+        <ComplexType Name="SelectTag_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Moore_Proccess_ControlsModelStoreContainer" CdmEntityContainer="Moore_Proccess_ControlsEntities" >
+          <FunctionImportMapping FunctionImportName="InsertLog" FunctionName="Moore_Proccess_ControlsModel.Store.InsertLog" />
+          <FunctionImportMapping FunctionImportName="InsertCalculationResult" FunctionName="Moore_Proccess_ControlsModel.Store.InsertCalculationResult" />
+          <FunctionImportMapping FunctionImportName="SelectCalculationType" FunctionName="Moore_Proccess_ControlsModel.Store.SelectCalculationType">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Moore_Proccess_ControlsModel.SelectCalculationType_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SelectTag" FunctionName="Moore_Proccess_ControlsModel.Store.SelectTag">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Moore_Proccess_ControlsModel.SelectTag_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

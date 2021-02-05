@@ -1,0 +1,9 @@
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\bin\Debug\Validators.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\bin\Debug\Validators.pdb
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\bin\Debug\Models.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\bin\Debug\Models.pdb
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\obj\Debug\Validators.csprojAssemblyReference.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\obj\Debug\Validators.csproj.CoreCompileInputs.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\obj\Debug\Validators.csproj.CopyComplete
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\obj\Debug\Validators.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\Validators\obj\Debug\Validators.pdb

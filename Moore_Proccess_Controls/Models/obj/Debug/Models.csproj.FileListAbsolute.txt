@@ -1,0 +1,6 @@
+H:\Work space\odds\C#\Moore_Proccess_Controls\Models\bin\Debug\Models.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\Models\bin\Debug\Models.pdb
+H:\Work space\odds\C#\Moore_Proccess_Controls\Models\obj\Debug\Models.csprojAssemblyReference.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\Models\obj\Debug\Models.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\Models\obj\Debug\Models.pdb

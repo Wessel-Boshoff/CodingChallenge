@@ -1,0 +1,8 @@
+H:\Work space\odds\C#\Moore_Proccess_Controls\Values\bin\Debug\Values.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\Values\bin\Debug\Values.pdb
+H:\Work space\odds\C#\Moore_Proccess_Controls\Values\obj\Debug\Values.csprojAssemblyReference.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\Values\obj\Debug\Values.ErrorMessages.resources
+H:\Work space\odds\C#\Moore_Proccess_Controls\Values\obj\Debug\Values.csproj.GenerateResource.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\Values\obj\Debug\Values.csproj.CoreCompileInputs.cache
+H:\Work space\odds\C#\Moore_Proccess_Controls\Values\obj\Debug\Values.dll
+H:\Work space\odds\C#\Moore_Proccess_Controls\Values\obj\Debug\Values.pdb

@@ -1,0 +1,86 @@
+﻿<Window x:Class="Moore_Proccess_Controls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Moore_Proccess_Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Moore Process Controls" FontSize="32"></Label>
+        <WrapPanel Margin="0,10,0,10" Grid.Row="1">
+            <Label Content="Sort By:" Width="70"></Label>
+            <ComboBox Name="cbColumn" SelectionChanged="cbColumn_SelectionChanged" SelectedItem="{Binding Column}" ItemsSource="{Binding Headers}" Width="150"></ComboBox>
+        </WrapPanel>
+
+        <DataGrid Name="dgTags" Grid.Row="2" ItemsSource="{Binding Lines}" AutoGenerateColumns="False" IsReadOnly="True" CanUserReorderColumns="False" CanUserSortColumns="False" CanUserResizeColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="TS" Width="auto" Binding="{Binding TS}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG1" Width="*" Binding="{Binding TAG1}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG2" Width="*" Binding="{Binding TAG2}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG3" Width="*" Binding="{Binding TAG3}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG4" Width="*" Binding="{Binding TAG4}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG5" Width="*" Binding="{Binding TAG5}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG6" Width="*" Binding="{Binding TAG6}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG7" Width="*" Binding="{Binding TAG7}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG8" Width="*" Binding="{Binding TAG8}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG9" Width="*" Binding="{Binding TAG9}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG10" Width="*" Binding="{Binding TAG10}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG11" Width="*" Binding="{Binding TAG11}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG12" Width="*" Binding="{Binding TAG12}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG13" Width="*" Binding="{Binding TAG13}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG14" Width="*" Binding="{Binding TAG14}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG15" Width="*" Binding="{Binding TAG15}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG16" Width="*" Binding="{Binding TAG16}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG17" Width="*" Binding="{Binding TAG17}"></DataGridTextColumn>
+                <DataGridTextColumn Header="TAG18" Width="*" Binding="{Binding TAG18}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Margin="0,20,0,20" Grid.Row="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+             
+                <WrapPanel Grid.Column="0">
+                    <Label Content="Column:" Width="70"></Label>
+                    <ComboBox SelectedItem="{Binding ColumnCalculation}" ItemsSource="{Binding Headers}" Width="150"></ComboBox>
+                </WrapPanel>
+                <WrapPanel  Grid.Column="1">
+                    <Label Content="Calculation:" Width="70"></Label>
+                    <ComboBox    SelectedItem="{Binding ColumnCalculationType}" ItemsSource="{Binding CalculationTypes}" Width="150"></ComboBox>
+                </WrapPanel>
+                <Button Margin="10,0,0,0" Grid.Column="2" Name="btnCalculate" Click="btnCalculate_Click" Content="Calculate" Height="27" Width="80" VerticalAlignment="Top" HorizontalAlignment="Left"></Button>
+
+                <WrapPanel Grid.Row="1" Margin="0,10,0,0">
+                    <Label Content="Result: "></Label>
+                    <Label Name="lbCalculationResult" Content="{Binding CalculationResult}"></Label>
+                </WrapPanel>
+                <StackPanel Grid.RowSpan="2" Grid.Column="3">
+                    <Button Click="btnSaveCSV_Click" Name="btnSaveCSV" HorizontalAlignment="Right" Height="35" Width="150" Margin="10,0,0,5" Content="Save as CSV"></Button>
+                    <Button Click="btnSaveDB_Click" Name="btnSaveDB" HorizontalAlignment="Right" Height="35" Width="150" Margin="10,0,0,5" Content="Save to DB"></Button>
+                </StackPanel>
+            </Grid>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

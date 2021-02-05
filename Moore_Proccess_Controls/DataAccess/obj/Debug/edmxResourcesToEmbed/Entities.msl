@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Moore_Proccess_ControlsModelStoreContainer" CdmEntityContainer="Moore_Proccess_ControlsEntities">
+    <FunctionImportMapping FunctionImportName="InsertLog" FunctionName="Moore_Proccess_ControlsModel.Store.InsertLog" />
+    <FunctionImportMapping FunctionImportName="InsertCalculationResult" FunctionName="Moore_Proccess_ControlsModel.Store.InsertCalculationResult" />
+    <FunctionImportMapping FunctionImportName="SelectCalculationType" FunctionName="Moore_Proccess_ControlsModel.Store.SelectCalculationType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Moore_Proccess_ControlsModel.SelectCalculationType_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SelectTag" FunctionName="Moore_Proccess_ControlsModel.Store.SelectTag">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Moore_Proccess_ControlsModel.SelectTag_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

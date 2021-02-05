@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Moore_Proccess_ControlsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Moore_Proccess_ControlsEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="InsertLog">
+      <Parameter Name="IdLevel" Mode="In" Type="Int32" />
+      <Parameter Name="Message" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsertCalculationResult">
+      <Parameter Name="IdTag" Mode="In" Type="Int32" />
+      <Parameter Name="IdCalculationType" Mode="In" Type="Int32" />
+      <Parameter Name="Value" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SelectCalculationType" ReturnType="Collection(Moore_Proccess_ControlsModel.SelectCalculationType_Result)" />
+    <FunctionImport Name="SelectTag" ReturnType="Collection(Moore_Proccess_ControlsModel.SelectTag_Result)" />
+  </EntityContainer>
+  <ComplexType Name="SelectCalculationType_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="170" />
+  </ComplexType>
+  <ComplexType Name="SelectTag_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+  </ComplexType>
+</Schema>
