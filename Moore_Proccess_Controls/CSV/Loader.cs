@@ -38,7 +38,29 @@ namespace Moore_Proccess_Controls.Data.CSV
                     continue;
                 }
 
-                tagFile.Lines.Add(new TagLine() { TS = DateTime.Parse(values.First(), CultureInfo.CurrentCulture), Tags = values.Skip(1).Select(c => decimal.Parse(c,CultureInfo.CurrentCulture))});
+                if (!DateTime.TryParse(values.First(), out DateTime ts))
+                {
+                    continue;
+                }
+
+                var dataToParse = values.Skip(1);
+                List<decimal> dataParsed = new List<decimal>();
+                foreach (var lineItem in dataToParse)
+                {
+                    try
+                    {
+                        decimal value = Convert.ToDecimal(lineItem, CultureInfo.InvariantCulture);
+                        dataParsed.Add(value);
+                    }
+                    catch (Exception ex)
+                    {
+                    }
+
+
+                }
+
+                tagFile.Lines.Add(new TagLine() { TS = ts, Tags = dataParsed});
+
             }
 
             return tagFile;
