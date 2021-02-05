@@ -4,3 +4,9 @@ H:\Work space\odds\C#\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\bin\Deb
 H:\Work space\odds\C#\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\obj\Debug\Moore_Proccess_Controls_DB.sqlprojAssemblyReference.cache
 H:\Work space\odds\C#\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\obj\Debug\Moore_Proccess_Controls_DB.dll
 H:\Work space\odds\C#\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\obj\Debug\Moore_Proccess_Controls_DB.pdb
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\bin\Debug\Moore_Proccess_Controls_DB.dacpac
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\bin\Debug\Moore_Proccess_Controls_DB.dll
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\bin\Debug\Moore_Proccess_Controls_DB.pdb
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\obj\Debug\Moore_Proccess_Controls_DB.sqlprojAssemblyReference.cache
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\obj\Debug\Moore_Proccess_Controls_DB.dll
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Moore_Proccess_Controls_DB\obj\Debug\Moore_Proccess_Controls_DB.pdb
