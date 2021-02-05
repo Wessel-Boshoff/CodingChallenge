@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Moore_Proccess_Controls.Core.Calculation
 {
@@ -13,7 +11,11 @@ namespace Moore_Proccess_Controls.Core.Calculation
         /// </summary>
         /// <param name="v"></param>
         /// <returns></returns>
-        public static decimal Calculate(IEnumerable<decimal> v) => 0;
-       
+        public static decimal Calculate(IEnumerable<decimal> v)
+        {
+            IEnumerable<double> valuesSqr = v.Select(c => Math.Sqrt((double)c));
+            double result = valuesSqr.Sum() / valuesSqr.Count();
+            return double.IsNaN(result) ? default : (decimal)result;
+        }
     }
 }

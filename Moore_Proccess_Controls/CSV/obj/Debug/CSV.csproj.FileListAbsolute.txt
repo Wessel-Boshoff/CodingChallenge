@@ -9,3 +9,14 @@ H:\Work space\odds\C#\Moore_Proccess_Controls\CSV\obj\Debug\CSV.dll
 H:\Work space\odds\C#\Moore_Proccess_Controls\CSV\obj\Debug\CSV.pdb
 H:\Work space\odds\C#\Moore_Proccess_Controls\CSV\bin\Debug\Values.dll
 H:\Work space\odds\C#\Moore_Proccess_Controls\CSV\bin\Debug\Values.pdb
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\bin\Debug\CSV.dll
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\bin\Debug\CSV.pdb
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\bin\Debug\Models.dll
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\bin\Debug\Values.dll
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\bin\Debug\Models.pdb
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\bin\Debug\Values.pdb
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\obj\Debug\CSV.csprojAssemblyReference.cache
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\obj\Debug\CSV.csproj.CoreCompileInputs.cache
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\obj\Debug\CSV.csproj.CopyComplete
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\obj\Debug\CSV.dll
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\CSV\obj\Debug\CSV.pdb

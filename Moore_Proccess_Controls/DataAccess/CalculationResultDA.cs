@@ -9,6 +9,13 @@ namespace Moore_Proccess_Controls.Data.DataAccess
 {
     public class CalculationResultDA : BaseDA
     {
-        public bool Insert(CalculationResult model) => mooreEntities.InsertCalculationResult(model.Tag.Id, model.CalculationType.Id, model.Value) == 1;
+        public bool Insert(CalculationResult model)
+        {
+            foreach (var item in model.Value)
+            {
+                mooreEntities.InsertCalculationResult(model.Tag.Id, model.CalculationType.Id, item);
+            }
+            return true;
+        }
     }
 }

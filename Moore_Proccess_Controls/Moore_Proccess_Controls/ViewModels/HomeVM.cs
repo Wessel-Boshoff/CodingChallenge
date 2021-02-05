@@ -2,6 +2,7 @@
 using Moore_Proccess_Controls.Models;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Configuration;
 
 namespace Moore_Proccess_Controls.ViewModels
 {
@@ -18,5 +19,12 @@ namespace Moore_Proccess_Controls.ViewModels
         public string Column { get; set; }
         public string ColumnCalculation { get; set; }
         public string ColumnCalculationType { get; set; }
+        public string ConnectionString { get; set; }
+
+        public HomeVM()
+        {
+            var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            ConnectionString = config.ConnectionStrings.ConnectionStrings["Moore_Proccess_ControlsEntities"].ConnectionString;
+        }
     }
 }

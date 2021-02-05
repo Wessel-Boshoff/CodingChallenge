@@ -11,7 +11,7 @@ namespace Moore_Proccess_Controls.Core.Models
         public int Id { get; set; } = 0;
         public StaticItem Tag { get; set; } = new StaticItem();
         public StaticItem CalculationType { get; set; } = new StaticItem();
-        public decimal Value { get; set; } = 0;
+        public List<decimal> Value { get; set; } = new List<decimal>();
         public DateTime Date { get; set; } = new DateTime();
     }
 }

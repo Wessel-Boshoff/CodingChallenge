@@ -13,6 +13,25 @@ namespace Moore_Proccess_Controls.Core.Calculation
         /// </summary>
         /// <param name="v"></param>
         /// <returns></returns>
-        public static decimal Calculate(IEnumerable<decimal> v) => 0;
+        public static List<decimal> Calculate(List<Tuple<DateTime, decimal>> rows)
+        {
+            List<decimal> values = new List<decimal>();
+
+            for (int i = 0; i < rows.Count; i++)
+            {
+                if (i == 0)
+                {
+                    values.Add(0);
+                    continue;
+                }
+
+                TimeSpan ts = rows[i].Item1 - rows[i - 1].Item1;
+                var diff = rows[i].Item2 - rows[i - 1].Item2;
+
+                values.Add((decimal)((double)diff / ts.TotalMilliseconds));
+            }
+
+            return values;
+        }
     }
 }

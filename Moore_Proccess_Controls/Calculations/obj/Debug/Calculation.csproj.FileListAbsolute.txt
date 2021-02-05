@@ -4,3 +4,8 @@ H:\Work space\odds\C#\Moore_Proccess_Controls\Calculations\obj\Debug\Calculation
 H:\Work space\odds\C#\Moore_Proccess_Controls\Calculations\obj\Debug\Calculation.csproj.CoreCompileInputs.cache
 H:\Work space\odds\C#\Moore_Proccess_Controls\Calculations\obj\Debug\Calculations.dll
 H:\Work space\odds\C#\Moore_Proccess_Controls\Calculations\obj\Debug\Calculations.pdb
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Calculations\bin\Debug\Calculations.dll
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Calculations\bin\Debug\Calculations.pdb
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Calculations\obj\Debug\Calculation.csproj.CoreCompileInputs.cache
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Calculations\obj\Debug\Calculations.dll
+H:\Work space\Current Projects\CodingChallenge\Moore_Proccess_Controls\Calculations\obj\Debug\Calculations.pdb

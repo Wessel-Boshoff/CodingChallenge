@@ -2,6 +2,7 @@
 using Moore_Proccess_Controls.Core.Models.Request;
 using Moore_Proccess_Controls.Core.Models.Response;
 using Moore_Proccess_Controls.Core.Validators;
+using Moore_Proccess_Controls.Core.Values;
 using Moore_Proccess_Controls.Data.CSV;
 using Moore_Proccess_Controls.Data.DataAccess;
 using System;
@@ -65,7 +66,7 @@ namespace Moore_Proccess_Controls.Core.Handler
                 { 
                     request.CalculationResult.CalculationType.Value.ToString(), 
                     request.CalculationResult.Tag.Value.ToString(),
-                    request.CalculationResult.Value.ToString() 
+                    string.Join(' '.ToString(), request.CalculationResult.Value) 
                 } 
             }) ? ResponseCodes.Success : ResponseCodes.Error;
     }

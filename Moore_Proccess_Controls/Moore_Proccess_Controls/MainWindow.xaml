@@ -16,10 +16,22 @@
         </Grid.RowDefinitions>
 
         <Label Content="Moore Process Controls" FontSize="32"></Label>
-        <WrapPanel Margin="0,10,0,10" Grid.Row="1">
-            <Label Content="Sort By:" Width="70"></Label>
-            <ComboBox Name="cbColumn" SelectionChanged="cbColumn_SelectionChanged" SelectedItem="{Binding Column}" ItemsSource="{Binding Headers}" Width="150"></ComboBox>
-        </WrapPanel>
+        <Grid Margin="0,10,0,10" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <WrapPanel >
+                <Label Content="Sort By:" Width="70"></Label>
+                <ComboBox Name="cbColumn" SelectionChanged="cbColumn_SelectionChanged" SelectedItem="{Binding Column}" ItemsSource="{Binding Headers}" Width="150"></ComboBox>
+            </WrapPanel>
+            <WrapPanel Grid.Column="1" HorizontalAlignment="Right">
+                <Label Content="Connection:" Width="70"></Label>
+                <TextBox Text="{Binding ConnectionString, Mode=TwoWay}" Width="450"></TextBox>
+                <Button Name="btnChangeConnection" Click="btnChangeConnection_Click" Content="Apply"></Button>
+            </WrapPanel>
+        </Grid>
+
 
         <DataGrid Name="dgTags" Grid.Row="2" ItemsSource="{Binding Lines}" AutoGenerateColumns="False" IsReadOnly="True" CanUserReorderColumns="False" CanUserSortColumns="False" CanUserResizeColumns="False">
             <DataGrid.Columns>
@@ -69,10 +81,19 @@
                 </WrapPanel>
                 <Button Margin="10,0,0,0" Grid.Column="2" Name="btnCalculate" Click="btnCalculate_Click" Content="Calculate" Height="27" Width="80" VerticalAlignment="Top" HorizontalAlignment="Left"></Button>
 
-                <WrapPanel Grid.Row="1" Margin="0,10,0,0">
+                <Grid Grid.Row="1" Grid.ColumnSpan="3" Margin="0,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
                     <Label Content="Result: "></Label>
-                    <Label Name="lbCalculationResult" Content="{Binding CalculationResult}"></Label>
-                </WrapPanel>
+  
+                    <Grid Grid.Column="1" Name="gResult">
+                        <ScrollViewer Width="{Binding ElementName=gResult, Path=ActualWidth}" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden">
+                            <Label  Name="lbCalculationResult" Content="{Binding CalculationResult}"></Label>
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
                 <StackPanel Grid.RowSpan="2" Grid.Column="3">
                     <Button Click="btnSaveCSV_Click" Name="btnSaveCSV" HorizontalAlignment="Right" Height="35" Width="150" Margin="10,0,0,5" Content="Save as CSV"></Button>
                     <Button Click="btnSaveDB_Click" Name="btnSaveDB" HorizontalAlignment="Right" Height="35" Width="150" Margin="10,0,0,5" Content="Save to DB"></Button>
